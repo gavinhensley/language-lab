@@ -28,7 +28,7 @@
 
 // gray code function
 // desc: Converts any binary number into gray code.
-// pre: Input must be an int.
+// pre:  Input must be an int.
 // post: Returns the gray code equivalent of the input.
 unsigned int decimalToGray(int decimalNum) {
     return decimalNum ^ (decimalNum >> 1); // The operator >> is shift right. The operator ^ is exclusive or.
@@ -36,7 +36,7 @@ unsigned int decimalToGray(int decimalNum) {
 
 // k-map function
 // desc: Converts min/maxterms into a k-map.
-// pre: numVariables > 1, the length of terms[] must be <= 2^numVariables.
+// pre:  numVariables > 1, the length of terms[] must be <= 2^numVariables.
 // post: Prints the k-map for the input terms.
 void karnaughMap(int numVariables, int maxNumTerms, bool termType, std::vector<int> vterms) {
     // the value of numVariables determines the number of rows and columns for the k-map

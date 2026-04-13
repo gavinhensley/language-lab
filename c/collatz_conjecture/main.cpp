@@ -24,7 +24,7 @@
 int main() {
     auto time_start = std::chrono::high_resolution_clock::now();
     std::uint64_t num = 1;
-    std::uint64_t end = 1e9;
+    std::uint64_t end = 1e6;
     for (num; num <= end; num += 2) {
         std::uint64_t current_num = num;
         while (current_num != 1) {
